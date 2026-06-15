@@ -51,11 +51,6 @@ Train the Logistic Regression models and append AI-driven probabilities to your 
 python scripts/predict_conversion_churn.py
 ```
 
-### 4. BI Integration (Power BI)
-1. Open Power BI Desktop.
-2. Import the newly created `scored_leads.csv`, `scored_accounts.csv`, `sales_reps.csv`, and `opportunities.csv`.
-3. Link the tables via their Primary/Foreign keys (`RepID`, `LeadID`, `OppID`).
-4. Build funnel and matrix visualizations using the generated ML predictions.
 
 ## 🧠 Machine Learning Details
 * **Lead Conversion Model:** Utilizes `OneHotEncoder` and `LogisticRegression` inside a Scikit-Learn `Pipeline` to evaluate `LeadSource`, `Industry`, and `CompanySize`. 
